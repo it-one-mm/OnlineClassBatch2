@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MovieFragment"
+    >
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            app:gnt_template_type="@layout/gnt_small_template_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:layout_below="@id/my_template"
+            android:id="@+id/txt_new_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="အသစ္ေရာက္ဇာတ္ကားမ်ား"
+            android:fontFamily="@font/zgf"
+            android:textColor="@color/colorAccent"/>
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_below="@id/txt_new_movie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movieitemheight"
+            android:id="@+id/new_movie_list"/>
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:layout_below="@id/new_movie_list"
+            android:id="@+id/my_template2"
+            app:gnt_template_type="@layout/gnt_medium_template_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </RelativeLayout>
+</FrameLayout>

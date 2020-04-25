@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Movie Box</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reward_unit_id">ca-app-pub-3361785966354077/1987275379</string>
+    <string name="app_id">ca-app-pub-3361785966354077~6118092075</string>
+    <string name="interstitial_id">ca-app-pub-3361785966354077/1987275379</string>
+    <string name="advanced_ads">ca-app-pub-3940256099942544/2247696110</string>
+</resources>
